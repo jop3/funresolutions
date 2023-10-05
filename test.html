@@ -1,0 +1,55 @@
+import React from 'react';
+
+function App() {
+    const handleSignUp = () => {
+        // Add your sign up functionality here
+        console.log('Sign up button clicked');
+    };
+
+    const handleLogIn = () => {
+        // Add your log in functionality here
+        console.log('Log in button clicked');
+    };
+
+    return (
+        <div className="ui container grid">
+            <div className="two column row">
+                <div className="column">
+                    <p>
+                        Welcome to our platform! We're here to help you gamify your New Year's resolutions and make them more fun and engaging. Sign up now to get started!
+                    </p>
+                    <button className="ui primary button" onClick={handleSignUp}>
+                        Sign Up
+                    </button>
+                    <button className="ui secondary button" onClick={handleLogIn}>
+                        Log in
+                    </button>
+                </div>
+                <div className="column">
+                    <div className="ui list">
+                        <div className="item">
+                            <img src="https://placedog.net/50/50?random" className="ui avatar image" alt="avatar" />
+                            <div className="content">
+                                Text Field 1
+                            </div>
+                        </div>
+                        <div className="item">
+                            <img src="https://placedog.net/50/50?random" className="ui avatar image" alt="avatar" />
+                            <div className="content">
+                                Text Field 2
+                            </div>
+                        </div>
+                        <div className="item">
+                            <img src="https://placedog.net/50/50?random" className="ui avatar image" alt="avatar" />
+                            <div className="content">
+                                Text Field 3
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+}
+
+export default App;
